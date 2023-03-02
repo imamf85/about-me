@@ -1,0 +1,140 @@
+:root {
+    --main-color: rgb(206, 60, 34);
+    --secondary-color: rgb(248, 72, 41);
+}
+
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+}
+
+.navigation {
+    background: var(--main-color);
+    height: 100vh;
+    width: 25vw;
+    color: white;
+    font-size: 40px;
+    font-weight: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+}
+
+.navigation img {
+    border-radius: 100px;
+    border: 5px solid rgb(214, 136, 122);
+}
+
+.navigation li {
+    list-style: none;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    opacity: 0.5;
+}
+
+.navigation a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.content-right>div {
+    border-block-end: medium solid rgb(179, 179, 179);
+}
+
+.about {
+    height: 100vh;
+    color: rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 30px;
+}
+
+.about h1 {
+    font-size: 100px;
+}
+
+.education,
+.experience,
+.skill,
+.contact-me {
+    height: 100vh;
+    color: rgb(71, 71, 71);
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.education div:nth-last-child(1) {
+    font-weight: 100;
+    font-size: 20px;
+    color: rgb(241, 113, 113);
+}
+
+.education h4 {
+    margin: 30px 30px 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education h6 {
+    font-weight: 200;
+}
+
+.contact-me {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.contact-me>div:first-of-type {
+    font-size: 1.5rem;
+}
+
+.contact-me div:nth-of-type(2) {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-me div:nth-of-type(2)>button {
+    width: 10rem;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
+
+.contact-me div:nth-of-type(2)>button:hover {
+    background-color: var(--secondary-color);
+    color: rgb(194, 200, 206);
+    cursor: pointer;
+}
+
+.contact-me div:nth-of-type(2)~div {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me div:last-child div:last-child {
+    color: var(--main-color)
+}
